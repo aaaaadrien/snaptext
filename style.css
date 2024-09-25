@@ -1,0 +1,114 @@
+/* Style général */
+html, body {
+    height: 100%; /* Assurez-vous que le corps prend toute la hauteur */
+    margin: 0; /* Supprime les marges par défaut */
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f8f8; /* Fond clair */
+    color: #333; /* Texte sombre */
+    display: flex; /* Utilise flexbox */
+    flex-direction: column; /* Colonne pour empiler les éléments */
+}
+
+.container {
+    flex: 1; /* Permet à la .container de prendre tout l'espace disponible */
+    max-width: 800px; /* Largeur maximale de la boîte */
+    margin: 20px auto; /* Centrer la boîte */
+    padding: 20px;
+    background: #fff; /* Fond blanc pour le contenu */
+    border-radius: 8px; /* Coins arrondis */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Ombre légère */
+    min-width: 500px; /* Largeur minimale de 500 pixels */
+}
+
+header {
+    background: #007bff; /* Couleur bleue */
+    color: #fff; /* Texte blanc */
+    padding: 10px 0; /* Espacement du haut et du bas */
+    text-align: center; /* Centre le texte */
+}
+
+nav h1 {
+    margin: 0; /* Supprime la marge par défaut */
+}
+
+/* Formulaire */
+form {
+    display: flex; /* Utilise flexbox pour le formulaire */
+    flex-direction: column; /* Aligne les éléments en colonne */
+}
+
+form div {
+    margin-bottom: 15px; /* Espacement entre les éléments */
+}
+
+label {
+    margin-bottom: 5px; /* Espacement en bas des étiquettes */
+}
+
+textarea {
+    border: 1px solid #ccc; /* Bord gris clair */
+    border-radius: 4px; /* Coins arrondis */
+    padding: 10px; /* Espacement à l'intérieur */
+    font-size: 16px; /* Taille de police */
+    resize: vertical; /* Permet de redimensionner uniquement verticalement */
+    min-height: 100px; /* Hauteur minimale pour le champ de texte */
+    width: 100%; /* Prend toute la largeur */
+}
+
+input[type="number"] {
+    border: 1px solid #ccc; /* Bord gris clair */
+    border-radius: 4px; /* Coins arrondis */
+    padding: 10px; /* Espacement à l'intérieur */
+    font-size: 16px; /* Taille de police */
+    width: 100%; /* Prend toute la largeur */
+}
+
+/* Style des boutons */
+button {
+    background: #0056b3; /* Couleur bleue plus foncée */
+    color: #fff; /* Texte blanc */
+    border: none; /* Pas de bordure */
+    padding: 10px; /* Espacement à l'intérieur */
+    border-radius: 5px; /* Coins arrondis */
+    cursor: pointer; /* Curseur en forme de main */
+    font-size: 16px; /* Taille de police */
+}
+
+button:hover {
+    background: #004494; /* Couleur bleue plus foncée au survol */
+}
+
+/* Messages de succès et d'erreur */
+.success-message {
+    background: #d4edda; /* Vert clair pour succès */
+    color: #155724; /* Texte sombre */
+    padding: 10px; /* Espacement à l'intérieur */
+    border-radius: 5px; /* Coins arrondis */
+    margin-bottom: 20px; /* Espacement en bas */
+}
+
+.error-message {
+    background: #f8d7da; /* Rouge clair pour erreur */
+    color: #721c24; /* Texte sombre */
+    padding: 10px; /* Espacement à l'intérieur */
+    border-radius: 5px; /* Coins arrondis */
+    margin-bottom: 20px; /* Espacement en bas */
+}
+
+.text-content {
+    background: #f9f9f9; /* Fond gris clair pour le texte partagé */
+    padding: 15px; /* Espacement à l'intérieur */
+    border-left: 4px solid #007bff; /* Bord bleu pour le texte partagé */
+    margin-top: 10px; /* Espacement en haut */
+    min-width: 500px; /* Largeur minimale pour le texte affiché */
+}
+
+footer {
+    text-align: center; /* Centre le texte */
+    padding: 10px 0; /* Espacement du haut et du bas */
+    background: #007bff; /* Couleur bleue */
+    color: white; /* Texte blanc */
+}
