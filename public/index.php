@@ -1,5 +1,5 @@
 <?php
-require '../includes/db.php'; // Inclusion du fichier de connexion à la base de données
+require '../includes/init.php'; // Inclusion du fichier de connexion à la base de données
 
 // Initialiser les variables
 $success_message = '';
@@ -37,7 +37,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
 <?php include '../includes/header.php'; ?> <!-- Inclusion de l'en-tête -->
 <div class="container">
-    <h2>Partager un texte de manière sécurisée</h2>
+<h2><?php echo $app_desc; ?></h2>
     
     <form action="" method="post">
         <div>
@@ -46,11 +46,11 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         </div>
         <div>
             <label for="expiration_days">Durée de validité (en jours) :</label>
-            <input type="number" name="expiration_days" id="expiration_days" value="7" required>
+	    <input type="number" name="expiration_days" id="expiration_days" value="<?php echo $def_days; ?>" required>
         </div>
         <div>
             <label for="max_views">Nombre maximum de vues :</label>
-            <input type="number" name="max_views" id="max_views" value="10" required>
+	    <input type="number" name="max_views" id="max_views" value="<?php echo $def_views; ?>" required>
         </div>
         <div>
             <button type="submit">Envoyer</button>

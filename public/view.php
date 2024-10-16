@@ -1,5 +1,5 @@
 <?php
-require '../includes/db.php'; // Inclusion du fichier de connexion à la base de données
+require '../includes/init.php'; // Inclusion du fichier de connexion à la base de données
 
 // Récupération du lien
 $link_hash = $_GET['link'] ?? null;

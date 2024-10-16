@@ -1,15 +1,10 @@
 <?php
-// db.php - Connexion à MySQL avec un utilisateur dédié
-
 function getDBConnection() {
-    $host = 'localhost';
-    $db = 'snaptext';
-    $user = 'snaptext';
-    $pass = 'snaptext';
+    global $db_host,$db_name,$db_user,$db_pass;
 
     try {
-        $dsn = "mysql:host=$host;dbname=$db;charset=utf8";
-        $pdo = new PDO($dsn, $user, $pass);
+        $dsn = "mysql:host=$db_host;dbname=$db_name;charset=utf8";
+        $pdo = new PDO($dsn, $db_user, $db_pass);
         $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
         return $pdo;
     } catch (PDOException $e) {
