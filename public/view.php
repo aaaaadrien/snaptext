@@ -1,5 +1,5 @@
 <?php
-require 'db.php'; // Inclusion du fichier de connexion à la base de données
+require '../includes/db.php'; // Inclusion du fichier de connexion à la base de données
 
 // Récupération du lien
 $link_hash = $_GET['link'] ?? null;
@@ -31,7 +31,7 @@ if ($link_hash) {
 }
 ?>
 
-<?php include 'header.php'; ?> <!-- Inclusion de l'en-tête -->
+<?php include '../includes/header.php'; ?> <!-- Inclusion de l'en-tête -->
 <div class="container">
     <h2>Texte partagé</h2>
     
@@ -45,5 +45,5 @@ if ($link_hash) {
         </div>
     <?php endif; ?>
 </div>
-<?php include 'footer.php'; ?> <!-- Inclusion du pied de page -->
+<?php include '../includes/footer.php'; ?> <!-- Inclusion du pied de page -->
 

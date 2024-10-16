@@ -1,5 +1,5 @@
 <?php
-require 'db.php'; // Inclusion du fichier de connexion à la base de données
+require '../includes/db.php'; // Inclusion du fichier de connexion à la base de données
 
 // Initialiser les variables
 $success_message = '';
@@ -35,7 +35,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 }
 ?>
 
-<?php include 'header.php'; ?> <!-- Inclusion de l'en-tête -->
+<?php include '../includes/header.php'; ?> <!-- Inclusion de l'en-tête -->
 <div class="container">
     <h2>Partager un texte de manière sécurisée</h2>
     
@@ -75,5 +75,5 @@ function copyToClipboard(text) {
 }
 </script>
 
-<?php include 'footer.php'; ?> <!-- Inclusion du pied de page -->
+<?php include '../includes/footer.php'; ?> <!-- Inclusion du pied de page -->
 

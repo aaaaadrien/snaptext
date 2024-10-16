@@ -3,9 +3,9 @@
 
 function getDBConnection() {
     $host = 'localhost';
-    $db = 'secure_text_db';
-    $user = 'app_user';
-    $pass = 'password_secure';
+    $db = 'snaptext';
+    $user = 'snaptext';
+    $pass = 'snaptext';
 
     try {
         $dsn = "mysql:host=$host;dbname=$db;charset=utf8";
