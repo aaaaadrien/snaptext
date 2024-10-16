@@ -37,7 +37,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
 <?php include '../includes/header.php'; ?> <!-- Inclusion de l'en-tête -->
 <div class="container">
-<h2><?php echo $app_desc; ?></h2>
+<h2><?php echo $app_title; ?></h2>
     
     <form action="" method="post">
         <div>

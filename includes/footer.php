@@ -1,6 +1,6 @@
     </div> <!-- Fin de .container -->
     <footer>
-        <p>&copy; <?php echo date("Y"); ?> Mon Application. Tous droits réservés.</p>
+        <p> <?php echo $app_name." - ".date("Y"); ?> - <a href="https://github.com/aaaaadrien/snaptext" target="_blank" >GitHub (snaptext)</a></p>
     </footer>
 </body>
 </html>

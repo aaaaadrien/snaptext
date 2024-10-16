@@ -55,7 +55,7 @@ textarea {
     font-size: 16px; /* Taille de police */
     resize: vertical; /* Permet de redimensionner uniquement verticalement */
     min-height: 100px; /* Hauteur minimale pour le champ de texte */
-    width: 100%; /* Prend toute la largeur */
+    width: calc(100% - 20px); /* Prend toute la largeur */
 }
 
 input[type="number"] {
@@ -63,7 +63,7 @@ input[type="number"] {
     border-radius: 4px; /* Coins arrondis */
     padding: 10px; /* Espacement à l'intérieur */
     font-size: 16px; /* Taille de police */
-    width: 100%; /* Prend toute la largeur */
+    width: 50px; /* Prend toute la largeur */
 }
 
 /* Style des boutons */
@@ -108,7 +108,11 @@ button:hover {
 
 footer {
     text-align: center; /* Centre le texte */
-    padding: 10px 0; /* Espacement du haut et du bas */
     background: #007bff; /* Couleur bleue */
     color: white; /* Texte blanc */
 }
+
+footer a {
+    color:inherit;
+    text-decoration: underline dotted;
+} 

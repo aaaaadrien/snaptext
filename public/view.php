@@ -33,7 +33,7 @@ if ($link_hash) {
 
 <?php include '../includes/header.php'; ?> <!-- Inclusion de l'en-tête -->
 <div class="container">
-    <h2>Texte partagé</h2>
+    <h2><?php echo $view_title; ?></h2>
     
     <?php if (isset($error_message)): ?>
         <div class="error-message">
